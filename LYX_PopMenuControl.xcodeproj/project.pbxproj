@@ -15,6 +15,9 @@
 		54983BB81FDA216600C09059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54983BB61FDA216600C09059 /* LaunchScreen.storyboard */; };
 		54983BC31FDA216600C09059 /* LYX_PopMenuControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54983BC21FDA216600C09059 /* LYX_PopMenuControlTests.m */; };
 		54983BCE1FDA216600C09059 /* LYX_PopMenuControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54983BCD1FDA216600C09059 /* LYX_PopMenuControlUITests.m */; };
+		54983BE01FDA221D00C09059 /* PopBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54983BDD1FDA221D00C09059 /* PopBottomCell.m */; };
+		54983BE11FDA221D00C09059 /* PopBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54983BDF1FDA221D00C09059 /* PopBottomView.m */; };
+		54983BE51FDA233200C09059 /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 54983BE41FDA233200C09059 /* UIColor+Transform.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		54983BC91FDA216600C09059 /* LYX_PopMenuControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYX_PopMenuControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54983BCD1FDA216600C09059 /* LYX_PopMenuControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYX_PopMenuControlUITests.m; sourceTree = "<group>"; };
 		54983BCF1FDA216600C09059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54983BDC1FDA221D00C09059 /* PopBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBottomCell.h; sourceTree = "<group>"; };
+		54983BDD1FDA221D00C09059 /* PopBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBottomCell.m; sourceTree = "<group>"; };
+		54983BDE1FDA221D00C09059 /* PopBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBottomView.h; sourceTree = "<group>"; };
+		54983BDF1FDA221D00C09059 /* PopBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBottomView.m; sourceTree = "<group>"; };
+		54983BE31FDA233200C09059 /* UIColor+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Transform.h"; sourceTree = "<group>"; };
+		54983BE41FDA233200C09059 /* UIColor+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 		54983BA71FDA216600C09059 /* LYX_PopMenuControl */ = {
 			isa = PBXGroup;
 			children = (
+				54983BE21FDA233200C09059 /* Tool */,
+				54983BDB1FDA221D00C09059 /* PopBottomView */,
 				54983BAB1FDA216600C09059 /* AppDelegate.h */,
 				54983BAC1FDA216600C09059 /* AppDelegate.m */,
 				54983BAE1FDA216600C09059 /* ViewController.h */,
@@ -138,6 +149,26 @@
 				54983BCF1FDA216600C09059 /* Info.plist */,
 			);
 			path = LYX_PopMenuControlUITests;
+			sourceTree = "<group>";
+		};
+		54983BDB1FDA221D00C09059 /* PopBottomView */ = {
+			isa = PBXGroup;
+			children = (
+				54983BDC1FDA221D00C09059 /* PopBottomCell.h */,
+				54983BDD1FDA221D00C09059 /* PopBottomCell.m */,
+				54983BDE1FDA221D00C09059 /* PopBottomView.h */,
+				54983BDF1FDA221D00C09059 /* PopBottomView.m */,
+			);
+			path = PopBottomView;
+			sourceTree = "<group>";
+		};
+		54983BE21FDA233200C09059 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				54983BE31FDA233200C09059 /* UIColor+Transform.h */,
+				54983BE41FDA233200C09059 /* UIColor+Transform.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54983BE51FDA233200C09059 /* UIColor+Transform.m in Sources */,
+				54983BE11FDA221D00C09059 /* PopBottomView.m in Sources */,
 				54983BB01FDA216600C09059 /* ViewController.m in Sources */,
 				54983BAD1FDA216600C09059 /* AppDelegate.m in Sources */,
+				54983BE01FDA221D00C09059 /* PopBottomCell.m in Sources */,
 				54983BAA1FDA216600C09059 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L34YV2XR39;
 				INFOPLIST_FILE = LYX_PopMenuControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lyx.LYX-PopMenuControl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L34YV2XR39;
 				INFOPLIST_FILE = LYX_PopMenuControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lyx.LYX-PopMenuControl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
